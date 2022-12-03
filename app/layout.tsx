@@ -1,3 +1,4 @@
+import Navbar from "../components/navbar";
 import "../styles/globals.css";
 
 export default function RootLayout({
@@ -7,8 +8,15 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head />
-      <body>{children}</body>
+      {/* done: navbar */}
+
+      <body>
+        {" "}
+        <div className='bg-red-200 py-5 '>
+          <Navbar />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
