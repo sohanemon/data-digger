@@ -22,7 +22,7 @@ const Hero: React.FC<Props> = () => {
         <div className='overflow-hidden '>
           <Image
             objectFit='cover'
-            src={require("../assets/images/Frame.png")}
+            src={require("../assets/images/Frame.png").default}
             layout='responsive'
             alt=''
           />
