@@ -8,9 +8,8 @@ const Navbar: React.FC<Props> = () => {
   return (
     <nav className='flex justify-between w-4/5 mx-auto items-center [&_*]:items-center'>
       <div>
-        <h1 className='text-lg leading-tight text-black font-semibold text-opacity-90'>
-          CREATIVE <br />
-          AGENCY
+        <h1 className='text-lg leading-tight text-gray-900 tracking-widest font-bold text-opacity-90'>
+          {"<>"}DamnDev{"</>"}
         </h1>
       </div>
       <div className='flex gap-7'>
