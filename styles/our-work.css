@@ -1,0 +1,11 @@
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+:root {
+  --swiper-theme-color: #ef4444;
+  --swiper-pagination-bullet-inactive-color: #bb4f4f;
+}
+.swiper-pagination {
+  margin-top: 81px;
+  position: relative;
+}

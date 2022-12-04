@@ -1,5 +1,7 @@
 import Head from "next/head";
+import Feedback from "../components/feedback";
 import Hero from "../components/hero";
+import OurWorks from "../components/our-works";
 import Partners from "../components/partners";
 import Services from "../components/services";
 
@@ -18,13 +20,18 @@ const Page: React.FC<Props> = () => {
       <div className='w-4/5 mx-auto'>
         {/* done: partners */}
         <Partners />
-        {/* todo: service */}
+        {/* done: service */}
         <Services />
-        {/* todo: our works */}
-        {/* todo: client feedback */}
-        {/* todo: submit form */}
+        {/* done: our works */}
       </div>
-      {/* todo: footer */}
+      <OurWorks />
+      <div className='w-4/5 mx-auto'>
+        {/* todo: client feedback */}
+        <Feedback />
+        {/* todo: submit form */}
+
+        {/* todo: footer */}
+      </div>
     </main>
   );
 };
