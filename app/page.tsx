@@ -4,6 +4,7 @@ import Hero from "../components/hero";
 import OurWorks from "../components/our-works";
 import Partners from "../components/partners";
 import Services from "../components/services";
+import SubmitForm from "../components/submit-form";
 
 interface Props {}
 
@@ -28,10 +29,11 @@ const Page: React.FC<Props> = () => {
       <div className='w-4/5 mx-auto'>
         {/* todo: client feedback */}
         <Feedback />
-        {/* todo: submit form */}
-
-        {/* todo: footer */}
       </div>
+
+      {/* done: submit form */}
+      <SubmitForm />
+      {/* todo: footer */}
     </main>
   );
 };
