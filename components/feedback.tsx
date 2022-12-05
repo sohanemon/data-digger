@@ -7,7 +7,7 @@ const Feedback: React.FC<Props> = () => {
   return (
     <section className='py-20'>
       <Heading colored='Feedback' uncolored='Clients' />
-      <div className='grid grid-cols-3 gap-5'>
+      <div className='grid grid-cols-3 gap-5 mt-20'>
         {images.map((_) => (
           <FeedbackCard key={_.src} {..._} />
         ))}
@@ -26,7 +26,7 @@ type FeedbackCardProps = {
 
 const FeedbackCard = ({ src, height, width }: FeedbackCardProps) => {
   return (
-    <div className='space-y-3 border rounded'>
+    <div className='space-y-3 border rounded p-5'>
       <div className='flex items-center gap-4'>
         <div className='overflow-hidden w-16 h-16 rounded-full'>
           <Image
