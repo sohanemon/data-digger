@@ -1,12 +1,21 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import MainIcon from "../../components/ui/main-icon";
+import { useAuth } from "../../context/auth-context";
 
 interface Props {
   reg: boolean;
 }
 
 const Page: React.FC<Props> = ({ reg }) => {
+  const { googleLogin } = useAuth();
+
+  const handleLogin = () => {
+    console.log("second");
+    googleLogin?.();
+  };
+
   return (
     <main className='grid place-content-center'>
       <div>
@@ -17,7 +26,10 @@ const Page: React.FC<Props> = ({ reg }) => {
           <p className='text-xl font-bold mb-4'>
             {reg ? "Register" : "Login"} With
           </p>
-          <button className='flex items-center w-80 rounded-full border-gray-400 border p-1 '>
+          <button
+            onClick={handleLogin}
+            className='flex items-center w-80 rounded-full border-gray-400 border p-1 '
+          >
             <div className='overflow-hidden h-8 w-8'>
               <Image
                 src={require("../../assets/images/icons/google.png")}
